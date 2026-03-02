@@ -1,0 +1,124 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_DATABASE_URL")
+}
+
+// Enums
+
+enum MessageRole {
+  USER
+  ASSISTANT
+  SYSTEM
+}
+
+enum UserRole {
+  USER
+  ADMIN
+}
+
+// Models
+
+model User {
+  id            String          @id @default(uuid())
+  name          String
+  email         String          @unique
+  passwordHash  String          @map("password_hash")
+  role          UserRole        @default(USER)
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @updatedAt @map("updated_at")
+
+  conversations Conversation[]
+  roadmaps      SavedRoadmap[]
+  summaries     SavedSummary[]
+  searches      SearchHistory[]
+
+  @@map("users")
+}
+
+model Mentor {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  bio       String
+  skills    String[]
+  expertise String[]
+  avatarUrl String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("mentors")
+}
+
+model Conversation {
+  id        String    @id @default(cuid())
+  menteeId  String?   @map("mentee_id")
+  title     String    @default("New Conversation")
+  messages  Message[]
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  user User? @relation(fields: [menteeId], references: [id], onDelete: Cascade)
+
+  @@index([menteeId])
+  @@map("conversations")
+}
+
+model Message {
+  id             String      @id @default(cuid())
+  conversationId String      @map("conversation_id")
+  role           MessageRole
+  content        String
+  createdAt      DateTime    @default(now()) @map("created_at")
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt])
+  @@map("messages")
+}
+
+model SavedRoadmap {
+  id            String   @id @default(cuid())
+  userId        String   @map("user_id")
+  goal          String
+  currentSkills String[] @map("current_skills")
+  timeline      String
+  result        Json
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("saved_roadmaps")
+}
+
+model SavedSummary {
+  id         String   @id @default(cuid())
+  userId     String   @map("user_id")
+  transcript String
+  result     Json
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("saved_summaries")
+}
+
+model SearchHistory {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  query     String
+  topK      Int      @map("top_k")
+  resultIds String[] @map("result_ids")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@map("search_history")
+}

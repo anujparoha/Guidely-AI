@@ -1,0 +1,21 @@
+# Almigo Robots.txt
+User-agent: *
+Allow: /
+Allow: /landing
+Allow: /roadmap
+Allow: /summarize
+Allow: /search
+
+# Disallow private/auth routes
+Disallow: /login
+Disallow: /signup
+
+# Disallow API and static assets from indexing
+Disallow: /api/
+Disallow: /assets/
+
+# Sitemap
+Sitemap: https://almigo.vercel.app/sitemap.xml
+
+# Crawl-delay (be nice to the server)
+Crawl-delay: 1

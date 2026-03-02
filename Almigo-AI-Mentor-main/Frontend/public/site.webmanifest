@@ -1,0 +1,19 @@
+{
+  "name": "Almigo — AI Career Mentor",
+  "short_name": "Almigo",
+  "description": "Your 24/7 AI career mentor. Chat, generate roadmaps, summarize sessions, and find mentors.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#14b8a6",
+  "orientation": "portrait-primary",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
