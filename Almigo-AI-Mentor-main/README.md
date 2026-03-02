@@ -1,64 +1,72 @@
-# ✨ Almigo — AI Mentor
+✨ Guidely-AI — AI Mentor
+What is Guidely-AI?
 
-## What is Almigo?
+Guidely-AI is your personal AI career mentor — available 24/7, completely private, and always ready to help. Whether you're planning a career change, building new skills, or need honest career advice, Guidely-AI delivers expert-level guidance in seconds instead of weeks.
 
-Almigo is your personal AI career mentor — available 24/7, completely private, and always ready to help. Whether you're planning a career change, building new skills, or just need honest career advice, Almigo gives you expert-level guidance in seconds instead of weeks.
+The Problem
 
-## The Problem
+Accessing quality career mentorship is difficult. Traditional mentoring requires finding the right person, scheduling time, and hoping they understand your goals. Many people either lack access to experienced mentors or wait months before receiving meaningful guidance.
 
-Getting good career advice is hard. Traditional mentorship requires finding the right person, scheduling time, and hoping they understand your situation. Most people either can't access quality mentoring or wait months before getting the guidance they need.
+The Solution
 
-## The Solution
+Guidely-AI brings an intelligent career mentor directly to your browser. It understands your goals, remembers your conversations, and delivers personalized, contextual advice — not generic suggestions you could find in a blog post.
 
-Almigo puts an intelligent career mentor in your browser. It understands your goals, remembers your conversations, and gives you personalized advice — not generic tips you could find in any blog post.
+What You Can Do
+💬 Chat with Your AI Mentor
 
-## What You Can Do
+Engage in real, back-and-forth conversations about your career. Ask about transitions, skill gaps, salary negotiation, interview preparation, or decision-making strategies. Guidely-AI maintains context across messages, improving the quality of advice over time.
 
-### 💬 Chat with Your AI Mentor
+🗺️ Generate a Career Roadmap
 
-Have real, back-and-forth conversations about your career. Ask about transitions, skill gaps, salary negotiation, interview prep, or just talk through a decision. Almigo remembers your context across messages, so the advice gets smarter the more you talk.
+Share your current skills, goals, and available time. Guidely-AI creates a structured, phase-by-phase roadmap with milestones, required skills, and actionable learning resources.
 
-### 🗺️ Generate a Career Roadmap
+📝 Summarize Any Conversation
 
-Tell Almigo where you want to be, what you already know, and how much time you have. It creates a detailed, phase-by-phase plan with clear milestones, skills to develop, and resources to use.
+Paste transcripts, meeting notes, or long articles — Guidely-AI extracts key insights, summaries, and actionable takeaways instantly.
 
-### 📝 Summarize Any Conversation
+🔍 Find the Right Mentor
 
-Paste a long transcript, meeting notes, or article — Almigo distills it into a concise summary with key takeaways and action items you can act on immediately.
+Describe what you need help with in plain language. Guidely-AI uses AI-powered semantic search to match you with relevant mentors based on meaning rather than simple keyword matching.
 
-### 🔍 Find the Right Mentor
+📜 Your History, Always Available
 
-Describe what you need help with in plain language. Almigo searches its mentor database using AI to find the most relevant experts based on meaning, not just keywords.
+Every chat, roadmap, summary, and mentor search is securely stored in your account. Return anytime to continue conversations or review past guidance.
 
-### 📜 Your History, Always Available
+Who Is This For?
 
-Every chat, roadmap, summary, and search is saved to your account. Come back anytime to pick up where you left off or revisit past advice.
+Students exploring career paths
 
-## Who Is This For?
+Early-career professionals navigating growth decisions
 
-- **Students** figuring out what career path to take
-- **Early-career professionals** navigating their first few years
-- **Career changers** planning a transition to a new field
-- **Ambitious professionals** building a roadmap to their next promotion
-- **Anyone** who wants honest, personalized career guidance without the wait
+Career changers transitioning into new industries
 
-## How It Works
+Ambitious professionals planning promotions or leadership roles
 
-1. **Create an account** — Your data is private and tied only to you
-2. **Choose a feature** — Chat, Roadmap, Summarize, or Search
-3. **Get instant results** — AI-powered responses appear in real time
-4. **Come back anytime** — Your history is saved and ready when you are
+Anyone seeking personalized, accessible career guidance
 
-## Privacy & Security
+How It Works
 
-- Your conversations are **private** and visible only to you
-- Passwords are securely hashed — we never store them in plain text
-- Logging out **wipes all session data** — no one using the same device can see your activity
-- Every piece of data is tied to your account and inaccessible to others
+Create an account — Your data is private and securely linked to you
 
-## Built By
+Select a feature — Chat, Roadmap, Summarize, or Search
 
-**Anuj Paroha** — Creator & Developer
+Receive instant results — AI-powered responses generated in real time
+
+Return anytime — Your conversation history is saved and accessible
+
+Privacy & Security
+
+All conversations are private and account-specific
+
+Passwords are securely hashed (never stored in plain text)
+
+Logging out clears all active session data
+
+User data is isolated and inaccessible to other accounts
+
+Built By
+
+Anuj Paroha — Creator & Developer
 
 ---
 
